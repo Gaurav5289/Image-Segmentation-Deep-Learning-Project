@@ -1,0 +1,21 @@
+# ==== Training configuration ====
+extn: .png
+epochs: 300
+im_width: 384
+im_height: 288
+
+# ==== Absolute-like (project-root relative) paths ====
+# NOTE: Always assume your project root is:
+# C:/Users/hp/Desktop/image_Segmentation/Medical-Image-Segmentation-Deep-Learning-Project
+
+image_path: Code/input/PNG/Original
+mask_path: Code/input/PNG/Ground Truth
+model_path: Code/output/models/model.pth
+log_path: Code/output/models/logs/logs.csv
+output_path: Code/output/prediction.png
+
+# ==== Training behaviour ====
+early_stopping_patience: 15
+batch_size: 4
+learning_rate: 0.0001
+
